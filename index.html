@@ -17,17 +17,37 @@
 	    
       <!-- 3DCGモデルを読み込む -->
       <a-assets>
-        <a-asset-item id="box" src="./assets/box.glb"></a-asset-item>
+        <a-asset-item id="b" src="./assets/b.glb"></a-asset-item>
+        <a-asset-item id="d" src="./assets/d.glb"></a-asset-item>
+        <a-asset-item id="f" src="./assets/f.glb"></a-asset-item>
+        <a-asset-item id="h" src="./assets/h.glb"></a-asset-item>
+        <a-asset-item id="j" src="./assets/j.glb"></a-asset-item>
+        <a-asset-item id="l" src="./assets/l.glb"></a-asset-item>
       </a-assets>
 
       <!-- マーカーの.pattファイルを読み込む -->
-      <a-marker type="pattern" url="./assets/marker.patt">
-        <!-- 3Dモデルを呼び出す -->
-        <a-entity gltf-model="#box"></a-entity>
+      <a-marker type="pattern" url="./assets/b.patt">
+        <a-entity gltf-model="#b"></a-entity>
+      </a-marker>
+      <a-marker type="pattern" url="./assets/d.patt">
+        <a-entity gltf-model="#d"></a-entity>
+      </a-marker>
+      <a-marker type="pattern" url="./assets/f.patt">
+        <a-entity gltf-model="#f"></a-entity>
+      </a-marker>
+      <a-marker type="pattern" url="./assets/h.patt">
+        <a-entity gltf-model="#h"></a-entity>
+      </a-marker>
+      <a-marker type="pattern" url="./assets/j.patt">
+        <a-entity gltf-model="#j"></a-entity>
+      </a-marker>
+      <a-marker type="pattern" url="./assets/l.patt">
+        <a-entity gltf-model="#l"></a-entity>
       </a-marker>
 
       <!-- カメラを追加 -->
       <a-entity camera></a-entity>
+      
     </a-scene>
   </body>
 </html>
